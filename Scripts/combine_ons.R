@@ -120,3 +120,4 @@ colnames(ons)[4] <- "pop_density"
 
 ons_master<-left_join(ons_master,ons[,c("ward","pop_density")],by="ward")
 
+write.csv(ons_master,"output/combined/wards_and_socioeconomic.csv")
