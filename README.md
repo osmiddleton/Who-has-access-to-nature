@@ -14,3 +14,6 @@ Variables:
 - Distance to nearest green space/AONB from centroid etc (km - as the crow flies)
 - Total species richness
 - Biodiversity (Simpson's?)
+
+Outputs:
+- Shiny app showing variables per ward
