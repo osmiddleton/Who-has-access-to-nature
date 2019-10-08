@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 data/
+notes.R
+summarise_wards.R
+
