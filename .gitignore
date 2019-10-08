@@ -4,8 +4,7 @@
 .Ruserdata
 notes.R
 summarise_wards.R
-data/ward_shapefiles/
 data/ONS_zip/
 output/ward_shapes/
-
+data/
 
