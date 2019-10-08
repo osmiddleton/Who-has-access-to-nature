@@ -10,11 +10,11 @@ library(dplyr)
 #######SPA:
 
 #read the file
-protectedSitesSPA <- st_read(paste0(here(), "/Repositories/HackathonAcces/data/JNCC_protected_areas/UK_SPA_GIS_20190326"), "GB_SPA_OSGB36_20190326")
+protectedSitesSPA <- st_read(here("Data", "JNCC_protected_areas/UK_SPA_GIS_20190326"), "GB_SPA_OSGB36_20190326")
 head(protectedSitesSPA)
 #Select only the England and Wales:
   #read the England and wales only boundary from isabel
-EnglandWales <- st_read(paste0(here(), "/Repositories/HackathonAcces/data/eng_wales"), "British_Isles_by_DA")
+EnglandWales <- st_read(here("Data", "eng_wales"), "British_Isles_by_DA")
 plot(EnglandWales)
 
 
