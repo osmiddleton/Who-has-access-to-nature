@@ -2,9 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+data/
 notes.R
 summarise_wards.R
-data/ONS_zip/
 output/ward_shapes/
-data/
+output/ward_shapes/
 
