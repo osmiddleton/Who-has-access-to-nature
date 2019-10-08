@@ -16,3 +16,10 @@ EW_wards <- wards %>% filter(str_detect(geo_code, "^E.*") | str_detect(geo_code,
 # get the centroids for the wards 
 EW_wards$Centroids <- st_centroid()
 # aggregate to county level
+
+
+#greenspace areas 
+greens <- st_read(dsn = here("Data", "OS_Greenspace/OS Greenspace (GML) GB/"), 
+                  layer = "OSOpenGreenspace_GB.gml")
+
+greens <- read.graph(here("Data", "OS_Greenspace/OS Greenspace (GML) GB", "OSOpenGreenspace_GB.gml"), format = "gml")
