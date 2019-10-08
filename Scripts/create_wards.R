@@ -7,7 +7,7 @@ library(sp)
 
 #### 1. DATA READ
 # read in shape data for wards
-wards = readOGR("data/ward_shape_files/infuse_ward_lyr_2011.shp")
+wards = readOGR("data/ward_shapefiles/infuse_ward_lyr_2011.shp")
 wards = st_as_sf(wards,coords=c("x","y"))
 wards = st_transform(wards, "+proj=utm +zone=42N +datum=WGS84 +units=km")
 
